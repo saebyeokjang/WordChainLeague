@@ -53,7 +53,7 @@ struct LevelSystem {
         return 1
     }
     
-    private static func getTotalExpForLevel(_ level: Int) -> Int {
+    static func getTotalExpForLevel(_ level: Int) -> Int {
         let targetLevel = min(level, 100)
         
         if let exactValue = levelTable[targetLevel] {
